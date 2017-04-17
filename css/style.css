@@ -1,0 +1,638 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background: #141414 url("../img/background-min.png") no-repeat top center;
+    
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;    
+    clear: both;
+}
+
+/*шапка*/
+header {
+    margin-bottom: 57px;
+    
+    background-color: black;
+}
+
+.centerer {
+    margin: 0 auto;
+    padding: 0 10px;
+    
+    width: 940px;
+}
+
+header .main-buttons {
+    margin: 0;
+    padding: 0;
+    
+    width: 780px;
+    
+    float: left;
+    
+    list-style: none;
+    
+    font-size: 0;
+}
+
+header li {
+    display: inline-block;    
+}
+
+header a {
+    position: relative;
+    
+    padding: 24px 20px;
+    
+    display: block;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    
+    color: #ffffff;
+}
+
+.main-buttons a:hover::after {
+    height: 4px;
+    
+    position: absolute;
+    
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    
+    font-size: 0;
+    
+    display: block;
+    
+    content: "";
+    
+    background: white;
+}
+
+.login {
+    float: right;
+    
+    max-width: 140px;
+}
+
+.login a {
+    padding-left: 55px;
+    
+    position: relative;
+}
+
+.login a:after {
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/sprites-min.png) no-repeat 0 -208px;
+    opacity: .4;
+    
+    display: block;
+    content: "";
+    
+    position: absolute;
+    
+    top: 50%;
+    margin-top: -10px;
+    left: 20px;
+}
+
+.login a:hover {
+    background-color: #242424;
+}
+
+.login a:hover::after {
+    opacity: 1;
+}
+
+/*основной контект*/
+.main-content {
+    margin: 0 auto;
+    padding: 0 10px;
+    
+    display: block;
+    
+    width: 940px;
+}
+
+/*логотип*/
+.logo {
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    
+    display: block;  
+}
+
+/*особенности*/
+.features {
+    margin-bottom: 63px;
+    
+    color: #fff;
+    
+    font-size: 0;
+}
+
+.feature {
+    margin-right: 15px;
+    
+    width: 303px;
+    
+    display: inline-block;
+    
+    vertical-align: top;
+    
+    text-align: center;
+}
+
+.feature:last-child {
+    margin-right: 0;
+}
+
+.feature h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+    
+    position: relative;    
+    display: block;
+    
+    font-size: 30px;
+    font-weight: 1000; 
+    line-height: 42px;
+}
+
+.feature h3:after {
+    margin-left: -10px;
+    
+    content: "";
+    
+    display: block;
+    position: absolute;
+    
+    bottom: 0;
+    left: 50%;
+    
+    width: 20px;
+    height: 20px;
+    
+    background: #fff;
+    
+    transform: rotate(45deg)
+}
+
+.feature p {
+    margin: 0;
+    padding: 0 20px;
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*информационный блок*/
+.main-information {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 34px;
+    
+    position: relative;
+    
+    width: 940px;
+    
+    background: #ffffff url("../img/patern-2-min.png");
+}
+
+.main-information:last-child {
+    margin-bottom: 64px;
+}
+
+.main-information:last-child .left-column {
+    padding-right: 0;
+    
+    width: 345px;
+}
+
+.divider {
+    margin-left: -4px;
+    
+    position: absolute;
+    
+    display: block;
+    
+    left: 50%;
+}
+
+.main-information h2{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+    
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.main-information p {
+    margin: 0;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.left-column,
+.right-column {
+    padding: 0;
+    margin: 55px 60px;
+    
+    width: 340px;
+    
+/*    background: red;*/
+    
+    box-sizing: border-box;
+    
+    padding: 0 20px;
+}
+
+.left-column {    
+    float: left;
+    
+    font-size: 0;
+}
+
+.left-column div {
+    margin-bottom: 32px;
+}
+
+.right-column {
+    float: right;
+    
+    font-size: 0;
+}
+
+.right-column div {    
+    margin-bottom: 32px;
+}
+
+time {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button {
+    padding: 11px 27px;
+    
+    display: inline-block;
+    
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    
+    background: black;
+}
+
+button, input[type="submit"] {
+    margin-right: 20px;
+    padding: 0;
+    
+    outline: none;
+    border: none;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    
+    width: 140px;
+    height: 43px;
+    
+    text-transform: uppercase;
+    
+    background: black;
+}
+
+input[type="submit"] {
+    width: 300px;
+}
+
+.left-column button:last-child , .right-column button:last-child {
+    margin-right: 0;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover {
+    background: #663d15;
+}
+
+.gallery {
+    margin: 0;
+    margin-bottom: 44px;
+    padding: 0;    
+}
+
+.gallery img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+    display: block;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+form .fields {
+    padding: 0;
+    margin: 0;
+    
+    margin-bottom: 34px;
+    
+    font-size: 0;
+}
+
+input[type="text"] {
+    margin-right: 20px;
+    margin-bottom: 19px;
+    padding-left: 16px;
+    
+    font-size: 14px;
+    
+    width: 140px;
+    height: 39px;
+    
+    border: 2px solid black;
+    
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    border:2px solid #663d15;
+}
+
+input[type="text"]:nth-child(2n) {
+    margin-right: 0;
+}
+
+input[type="text"]:last-child, input[type="text"]:nth-child(3) {
+    margin-bottom: 0;
+}
+
+/*футер*/
+
+footer {
+    padding-top: 58px;
+    
+    width: 100%;
+    height: 190px;
+    
+    background: #232323 url("../img/patern-1-min.png");
+    
+    font-size: 0;
+    color: #ffffff;
+    
+    box-sizing: border-box;
+}
+
+footer a {
+    width: 140px;
+    
+    box-sizing: border-box;
+}
+
+footer .button:last-child:hover {
+    background: white;
+    color: black;
+}
+
+footer .centerer>div {
+    padding: 0;
+    margin-right: 20px;
+    
+    width: 300px;
+    
+    display: inline-block;
+    vertical-align: top;
+    
+    font-size: 0;
+}
+
+footer .centerer>div:nth-child(2) {
+    margin-right: 180px;
+    
+    text-align: center;
+}
+
+footer .centerer>div:last-child {
+    width: 140px;
+    
+    margin-right: 0;
+    
+    text-align: center;
+    font-size: 14px;
+}
+
+footer h3 {    
+    margin: 0;
+    margin-bottom: 5px;
+    
+    font-size: 14px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.socialn {
+    font-size: 0;
+}
+
+.socialn a {
+    margin-right: 16px;
+    
+    width: 43px;
+    height: 43px;
+    
+    font-size: 14px;
+    
+    display: inline-block;
+    
+    vertical-align: top;
+}
+
+.socialn .vk {
+    background: #000000 url(../img/sprites-min.png) no-repeat 9px -825px;
+}
+
+.socialn .fb {
+    background: #000000 url(../img/sprites-min.png) no-repeat 16px -548px;
+}
+
+.socialn .inst {
+    margin-right: 0;
+    
+    background: #000000 url(../img/sprites-min.png) no-repeat 12px -690px;
+}
+
+.socialn .vk:hover {
+    background: #ffffff url(../img/sprites-min.png) no-repeat 9px -759px;
+}
+
+.socialn .fb:hover {
+    background: #ffffff url(../img/sprites-min.png) no-repeat 16px -476px;
+}
+
+.socialn .inst:hover {
+    background: #ffffff url(../img/sprites-min.png) no-repeat 12px -619px;
+}
+
+/*поп-ап*/
+
+.pop-up {
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    box-sizing: border-box;
+        
+    position: fixed;
+    
+    height: 430px;
+    width: 460px;
+    
+    top: 120px;
+    left: 50%;
+    
+    margin-left: -230px;
+    
+    background: #ffffff;
+}
+
+.pop-up button {
+    margin: 0;
+    padding: 0;
+    
+    content: " ";
+    
+    display: block;
+    
+    position: absolute;
+    
+    width: 25px;
+    height: 25px;
+    
+    top: 0;
+    right: -45px;
+    
+    background: url(../img/sprites-min.png) no-repeat 2px -138px;
+}
+
+.pop-up h2, .pop-up p {
+    margin: 0;
+}
+
+.pop-up h2 {
+    margin-bottom: 22px;
+    
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.pop-up p {
+    margin-bottom: 30px;
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.pop-up input[type="text"], .pop-up input[type="password"] {
+    padding: 9px 15px;
+    margin: 0;
+    
+    outline: none;
+    
+    border: 2px solid #000;
+    
+    box-sizing: border-box;
+    
+    width: 300px;
+    height: 44px;
+    
+    position: relative;
+}
+
+.pop-up .log::before {
+    display: block;
+    
+    content: "";
+    
+    position: absolute;
+    
+    width: 17px;
+    height: 17px;
+    
+    background: black;
+}
+
+input::-moz-placeholder {
+    color: black;
+    opacity: 1;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: black;
+}
+
+input::-webkit-input-placeholder { 
+    color: black;
+    opacity: 1;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.pop-up input[type="text"]:hover, .pop-up input[type="text"]:focus, .pop-up input[type="password"]:hover, .pop-up input[type="password"]:focus {
+    border: 2px solid #663d15;
+}
+
+.pop-up input[type="text"] {
+    margin-bottom: 9px;
+}
+
+.pop-up input[type="password"] {
+    margin-bottom: 15px;
+}
