@@ -120,8 +120,14 @@
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <form action="">
-            <input class="log" type="text" placeholder="Логин">
-            <input type="password" placeholder="Пароль">
+            <div class="log">
+                <input type="text" placeholder="Логин" required>
+                <i class="icon-user"></i>
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Пароль" required>
+                <i class="icon-lock"></i>
+            </div>
             <div class="log-in-help clearfix">
                 <div>
                     <input id="chb" type="checkbox" name="checkbox1" checked/>
