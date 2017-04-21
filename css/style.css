@@ -706,7 +706,7 @@ input::-webkit-input-placeholder {
     position: relative;
 }
 
-form i {
+.log i, .pass i {
     padding: 0;
     margin: 0;
     
@@ -719,12 +719,9 @@ form i {
 }
 
 .log-in-help label:before {
-    content: "\e802";
-    
     display: inline-block;
     
-    vertical-align: top;
+    font-family: fontello;
     
-    
-    font-size: 20px;
+    content: '\e802';
 }
