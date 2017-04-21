@@ -636,3 +636,17 @@ input::-webkit-input-placeholder {
 .pop-up input[type="password"] {
     margin-bottom: 15px;
 }
+
+.log-in-help {
+    margin-bottom: 17px;
+}
+
+.log-in-help>div {
+    float: left;
+}
+
+.log-in-help>a {
+    float: right;
+    
+    color: black;
+}
