@@ -599,6 +599,12 @@ footer ul {
     margin-left: -230px;
     
     background: #ffffff;
+    
+    display: none;
+}
+
+.pop-up-shown {
+    display: block;
 }
 
 .pop-up button {
@@ -720,6 +726,10 @@ input::-webkit-input-placeholder {
 
 .log-in-help label {
     display: inline-block;
+}
+
+.log-in-help label:hover {
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
