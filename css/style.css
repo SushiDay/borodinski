@@ -718,10 +718,35 @@ input::-webkit-input-placeholder {
     top: 8px;
 }
 
-.log-in-help label:before {
+.log-in-help label {
     display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.log-in-help label:before {
+    margin-right: 10px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    text-align: center;
+    
+    width: 16px;
+    height: 16px;
+    
+    line-height: 15px;
     
     font-family: fontello;
+    font-size: 16px;
     
-    content: '\e802';
+    border: 2px solid black;
+    
+    content: "";
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: "\e802";
 }
