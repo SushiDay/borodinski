@@ -189,14 +189,30 @@ header a {
     width: 940px;
 }
 
+.main-content .logo {
+    padding: 0;
+    margin: 0;    
+    margin-bottom: 20px;
+    
+    display: block;
+        
+    width: 100%;
+    height: 204px;
+    
+    text-align: center;
+}
+
 /*логотип*/
-.logo {
+.logo a {
     margin: 0;
-    margin: 0 auto;
-    margin-bottom: 25px;
     padding: 0;
     
-    display: block;  
+    font-size: 0;
+}
+
+.logo img {
+    padding: 0;
+    margin: 0;
 }
 
 /*особенности*/
