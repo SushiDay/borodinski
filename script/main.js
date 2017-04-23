@@ -32,7 +32,10 @@ window.addEventListener("keydown", function(event) {
     if(event.keyCode == 27) {
         if(popup.classList.contains("pop-up-shown")) {
             popup.classList.remove("pop-up-shown");
-        }        
+        }
+        else if(map.classList.contains("map-shown")) {
+            map.classList.remove("map-shown");
+        }
     }
 });
 
