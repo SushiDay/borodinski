@@ -71,6 +71,8 @@ body {
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
+    
+    
 }
 
 .clearfix:after {
@@ -633,13 +635,15 @@ footer ul {
     background: #ffffff;
     
     display: none;
+    
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1);
 }
 
 .pop-up-shown {
     display: block;
 }
 
-.pop-up button {
+.pop-up button, .map button {
     margin: 0;
     padding: 0;
     
@@ -793,17 +797,54 @@ input[type="checkbox"]:checked + label:before {
     content: "\e802";
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
+.fall {
+    -webkit-animation-name: fall;
+    -webkit-animation-duration: .8s;
 }
 
-@-webkit-keyframes fade {
-  from {top: -430px} 
-  to {top: 120px}
+@-webkit-keyframes fall {    
+    0% {top: -430px} 
+    80% {top: 130px}
+    90% {top: 110px}
+    100% {top 120px}
+}
+
+@keyframes fall {
+    0% {top: -430px} 
+    70% {top: 130px}
+    80% {top: 110px}
+    100% {top 120px}
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .8s;
+}
+
+@-webkit-keyframes fade {    
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {top: -430px} 
-  to {top: 120px}
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.map {
+    margin-left: -420px;
+    
+    position: fixed;
+    
+    top: 90px;
+    
+    left: 50%;
+    
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1);
+    
+    display: none;
+}
+
+.map-shown {
+    display: block;
 }
