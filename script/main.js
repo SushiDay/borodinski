@@ -5,7 +5,7 @@ var close = document.querySelector(".pop-up button");
 
 login.addEventListener("click", function(event) {
     event.preventDefault();
-    popup.classList.add("pop-up-shown");
+    popup.classList.add("pop-up-shown", "fade");
 });
 
 close.addEventListener("click", function(event) {
