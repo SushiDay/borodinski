@@ -436,6 +436,22 @@ form .fields {
     font-size: 0;
 }
 
+.fields input::-moz-placeholder {
+    color: black;
+    
+    opacity: 1;
+    
+    text-transform: uppercase;
+}
+
+.fields input::-webkit-input-placeholder {
+    color: black;
+    
+    opacity: 1;
+    
+    text-transform: uppercase;
+}
+
 input[type="text"] {
     margin-right: 20px;
     margin-bottom: 19px;
@@ -662,7 +678,7 @@ footer ul {
     position: relative;
 }
 
-input::-moz-placeholder {
+.pop-up input::-moz-placeholder {
     color: black;
     opacity: 1;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -672,7 +688,7 @@ input::-moz-placeholder {
     color: black;
 }
 
-input::-webkit-input-placeholder { 
+.pop-up input::-webkit-input-placeholder { 
     color: black;
     opacity: 1;
     font-family: 'PT Sans Narrow', sans-serif;
