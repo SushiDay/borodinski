@@ -799,11 +799,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {top: -430px} 
+  to {top: 120px}
 }
 
 @keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {top: -430px} 
+  to {top: 120px}
 }
