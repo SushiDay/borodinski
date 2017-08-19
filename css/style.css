@@ -144,6 +144,24 @@ header a {
     background: white;
 }
 
+.active::after {
+    height: 4px;
+    
+    position: absolute;
+    
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    
+    font-size: 0;
+    
+    display: block;
+    
+    content: "";
+    
+    background: white;
+}
+
 .login {
     float: right;
     
@@ -340,8 +358,6 @@ header a {
     margin: 55px 60px;
     
     width: 340px;
-    
-/*    background: red;*/
     
     box-sizing: border-box;
     
