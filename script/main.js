@@ -11,20 +11,20 @@ login.addEventListener("click", function(event) {
     popup.classList.add("pop-up-shown", "fall");    
 });
 
-//mapopener.addEventListener("click", function(event) {
-//    event.preventDefault();
-//    map.classList.add("map-shown", "fade");
-//});
+mapopener.addEventListener("click", function(event) {
+    event.preventDefault();
+    map.classList.add("map-shown", "fade");
+});
 
 close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("pop-up-shown");
 });
 
-//closeMap.addEventListener("click", function(event){
-//    event.preventDefault();
-//    map.classList.remove("map-shown");
-//});
+closeMap.addEventListener("click", function(event){
+    event.preventDefault();
+    map.classList.remove("map-shown");
+});
 
 window.addEventListener("keydown", function(event) {
     event.preventDefault();
